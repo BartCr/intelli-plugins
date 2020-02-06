@@ -1,0 +1,51 @@
+<!--
+  ~ Copyright (c) 2020 by Bart Cremers
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a
+  ~ copy of this software and associated documentation files (the "Software"),
+  ~ to deal in the Software without restriction, including without limitation
+  ~ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+  ~ and/or sell copies of the Software, and to permit persons to whom the
+  ~ Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  ~ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  ~ DEALINGS IN THE SOFTWARE.
+  -->
+
+<idea-plugin url="http://intelli-plugins.sourceforge.net/" >
+  <name>ZipChanges</name>
+  <description><![CDATA[
+    This plugin adds an extra action to the ChangeList popup menu. It allows for creating a zip file
+    containing specific changes.
+    <p/>
+    The plugin searches for a common ancestor to create a meaningfull folder structure inside the zip
+    file.
+  ]]></description>
+  
+  <vendor email="bcremers@gmail.com">Bart Cremers</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.vcs</depends>
+
+  <resource-bundle>i18n.ZipChangesBundle</resource-bundle>
+  <project-components>
+    <component>
+      <implementation-class>net.sf.intelliplugin.zipchanges.ZipChangesCommitExecutor</implementation-class>
+    </component>
+  </project-components>
+  <actions>
+    <action id="zipChanges" class="net.sf.intelliplugin.zipchanges.ZipChangesAction" text="Zip Changes"
+            description="Zip changes in current change list" icon="/icon/zipIcon.png">
+      <add-to-group group-id="ChangesViewPopupMenu" anchor="after" relative-to-action="ChangesView.Shelve" />
+      <add-to-group group-id="ChangesViewToolbar" anchor="last" />
+    </action>
+  </actions>
+</idea-plugin>
