@@ -1,0 +1,80 @@
+<!--
+  ~ Copyright (c) 2020 by Bart Cremers
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a
+  ~ copy of this software and associated documentation files (the "Software"),
+  ~ to deal in the Software without restriction, including without limitation
+  ~ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+  ~ and/or sell copies of the Software, and to permit persons to whom the
+  ~ Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  ~ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  ~ DEALINGS IN THE SOFTWARE.
+  -->
+
+<idea-plugin>
+    <name>IntelliCalc</name>
+    <description><![CDATA[
+        A small calculator integrated in IntelliJ.
+        <p>
+        The calculator has three modes:
+        <dl>
+            <dt>Simple
+            <dd>A simple calculator with just the basic functions
+            <dt>Scientific
+            <dd>A scientific calculator with more advanced functions
+            <dt>Expression
+            <dd>Allows to enter an expression containing variables.
+        </dl>
+        <p>
+        Use it as a normal simple calculator (with advanced functions) or evaluate expressions directly from your
+        editor. To evaluate an expression in the editor, simply select the expression and select Evaluate in the
+        editor popup menu or simply press alt F8. Remember that when debugging a program, the alt F8 function will be
+        bound to the "Evaluate Expression" action of the IntelliJ IDEA.
+        <p>
+        The expression mode knows math functions (add, subtract, sin, cos, acotan, ...), logical operators (||, !=, ...)
+        and some special functions:
+        <dl>
+            <dt>set()
+            <dd>will set a variable so it can be used in a calculation. Ex. set(x=2)[enter]2*x[enter]returns 4
+            <dt>clear()
+            <dd>Clears a stored variable. Ex. clear(x) will clear the variable x. Note that any calculation using x
+                will fail until a new x has been set.
+        </dl>
+        Awaiting suggestions to improve the calculator.
+    ]]>
+    </description>
+
+    <vendor email="bcremers@gmail.com">Bart Cremers</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+<!--    <project-components>-->
+<!--        <component>-->
+<!--            <implementation-class>net.sf.intelliplugin.calc.Plugin</implementation-class>-->
+
+<!--        </component>-->
+<!--    </project-components>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="IntelliCalc" secondary="true" icon="/images/logo-small.gif" anchor="left"
+                    factoryClass="net.sf.intelliplugin.calc.CalcToolWindowFactory"/>
+
+    </extensions>
+
+    <actions>
+        <action id="calc-evaluate" class="net.sf.intelliplugin.calc.action.EvaluateAction" text="Evaluate"
+                description="Evaluate using IntelliCalc">
+            <keyboard-shortcut keymap="$default" first-keystroke="alt F8"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.sf.intelliplugin.calc.ui.SimpleCalculator">
+  <grid id="27dc6" binding="contentPane" layout-manager="GridLayoutManager" row-count="9" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="464" height="299"/>
+    </constraints>
+    <properties>
+      <focusTraversalPolicyProvider value="false"/>
+    </properties>
+    <border type="empty">
+      <size top="5" left="5" bottom="5" right="5"/>
+    </border>
+    <children>
+      <component id="48f17" class="javax.swing.JTextField" binding="tfOutput">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <focusable value="true"/>
+          <horizontalAlignment value="4"/>
+        </properties>
+      </component>
+      <component id="4d7a7" class="javax.swing.JButton" binding="btNine">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="9"/>
+        </properties>
+      </component>
+      <component id="ec666" class="javax.swing.JButton" binding="btEight">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="8"/>
+        </properties>
+      </component>
+      <component id="e1de2" class="javax.swing.JButton" binding="btSeven">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="7"/>
+        </properties>
+      </component>
+      <component id="51e88" class="javax.swing.JButton" binding="btSix">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="6"/>
+        </properties>
+      </component>
+      <component id="8a7ef" class="javax.swing.JButton" binding="btFive">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="5"/>
+        </properties>
+      </component>
+      <component id="dafac" class="javax.swing.JButton" binding="btFour">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="4"/>
+        </properties>
+      </component>
+      <component id="a2336" class="javax.swing.JButton" binding="btThree">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="3"/>
+        </properties>
+      </component>
+      <component id="37e19" class="javax.swing.JButton" binding="btTwo">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="2"/>
+        </properties>
+      </component>
+      <component id="719e3" class="javax.swing.JButton" binding="btOne">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="1"/>
+        </properties>
+      </component>
+      <component id="44385" class="javax.swing.JButton" binding="btZero">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="cb148" class="javax.swing.JButton" binding="btToScientific">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <inheritsPopupMenu value="true"/>
+          <margin top="3" left="3" bottom="3" right="3"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="scientific"/>
+        </properties>
+      </component>
+      <component id="e7a5a" class="javax.swing.JButton" binding="btEvaluate">
+        <constraints>
+          <grid row="6" column="4" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="="/>
+        </properties>
+      </component>
+      <component id="6b25" class="javax.swing.JButton" binding="btPoint">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="9" bottom="2" right="9"/>
+          <text value="."/>
+        </properties>
+      </component>
+      <component id="8c42e" class="javax.swing.JButton" binding="btPlus">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="+"/>
+        </properties>
+      </component>
+      <component id="1057" class="javax.swing.JButton" binding="btMinus">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="-"/>
+        </properties>
+      </component>
+      <component id="34188" class="javax.swing.JButton" binding="btMultiply">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="x1"/>
+        </properties>
+      </component>
+      <component id="bbf69" class="javax.swing.JButton" binding="btDivide">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="/"/>
+        </properties>
+      </component>
+      <component id="5e019" class="javax.swing.JButton" binding="btPercent">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text value="%"/>
+        </properties>
+      </component>
+      <component id="653ee" class="javax.swing.JButton" binding="btOneDivX">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="4" bottom="2" right="4"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="1.x"/>
+        </properties>
+      </component>
+      <component id="bed98" class="javax.swing.JButton" binding="btPlusMin">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="4" bottom="2" right="4"/>
+          <text value="+/-"/>
+        </properties>
+      </component>
+      <component id="f3b77" class="javax.swing.JButton" binding="btBackspace">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="0" bottom="2" right="0"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="back"/>
+        </properties>
+      </component>
+      <component id="cc15c" class="javax.swing.JButton" binding="btClearAll">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="6" bottom="2" right="6"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="ac"/>
+        </properties>
+      </component>
+      <component id="4202c" class="javax.swing.JButton" binding="btClear">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <margin top="2" left="10" bottom="2" right="10"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="ce"/>
+        </properties>
+      </component>
+      <component id="85a8e" class="javax.swing.JButton" binding="btToExpression">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <focusable value="true"/>
+          <inheritsPopupMenu value="true"/>
+          <margin top="3" left="3" bottom="3" right="3"/>
+          <text resource-bundle="i18n/IntelliCalcBundle" key="evaluate"/>
+        </properties>
+      </component>
+      <component id="c879" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <hspacer id="16af1">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="a5b01">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="MissingMnemonic"/>
+    <suppress inspection="NoLabelFor"/>
+  </inspectionSuppressions>
+</form>

@@ -1,0 +1,18 @@
+List of open issues
+=-=-=-=-=-=-=-=-=-=
+
+- Re-Design evaluator:
+  The evaluator could use some refactoring.
+
+- IntelliJ integration (toolwindow):
+  Switching between simple and scientific modes does not go smoothly when the calculator is docked.
+  Resizing can not be performed easily.
+  An option might be to register/deregister a toolwindow for each mode on the fly. Might be problematic
+  because it would be possible for the calculator to move its anchor.
+
+- Configuration options:
+  * Grouping
+  * Precision
+  * Colors
+  * Fonts
+  

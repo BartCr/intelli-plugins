@@ -22,7 +22,6 @@ build
 
 # Temporary ignore subprojects
 Gantt
-IntelliCalc
 IntelliHeap
 IntelliTail
 web
